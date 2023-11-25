@@ -3,7 +3,7 @@ $(document).ready(function () {
     const nomeSorteadoElement = $('#nomeSorteado');
 
     // Carrega o arquivo JSON
-    $.getJSON('lista_nome2.json', function (data) {
+    $.getJSON('lista.json', function (data) {
         const nomes = data.nomes;
 
         sortearNomeButton.click(function () {
