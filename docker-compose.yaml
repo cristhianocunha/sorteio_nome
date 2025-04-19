@@ -5,7 +5,7 @@ services:
     image: php:8.0-apache
     container_name: apache-sorteador
     volumes:
-      - . /:/var/www/html
+      - ./:/var/www/html
   
   
 
