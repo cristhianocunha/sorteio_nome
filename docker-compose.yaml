@@ -4,9 +4,6 @@ services:
   apache-sorteador:
     image: php:8.0-apache
     container_name: apache-sorteador
-    ports:
-      - "80:80"
-      - "443:443"
     volumes:
       - ./:/var/www/html
   
