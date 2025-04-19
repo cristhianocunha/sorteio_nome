@@ -4,6 +4,12 @@ services:
     container_name: apache-sorteador
     volumes:
       - ./:/var/www/html
-  
+    networks:
+     - npm-network  # Conecta ao NPM
+    restart: unless-stopped
+  networks:
+    npm-network:
+    external: true
+
   
 
